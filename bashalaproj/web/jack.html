@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Calculation</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color:steelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color:lightskyblue;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color:blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color:blue;
+    font-weight:bold;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+    </style>
+</head>
+<body>
+    <form method="post" action="markcal.jsp">
+    <div class="container">
+        <h1>Student Marks Calculation</h1>
+        <div class="form-group">
+            <label for="students">Select Student:</label>
+            <select id="students" name="student">
+                <option value="parvathy" name="stud1">Parvathy</option>
+                <option value="lakshmi" name="stud2">Lakshmi</option>
+                <option value="harini" name="stud3">Harini</option>
+                <option value="varthini" name="stud4">Varthini</option>
+                <option value="paru" name="stud5">Paru</option>
+                <option value="ram" name="stud6">Ram</option>
+                <option value="sree" name="stud7">Sree</option>
+                <option value="mani" name="stud8">Mani</option>
+                <option value="sobi" name="stud9">Sobi</option>
+                <option value="praveen" name="stud10">Praveen</option>
+                <option value="gayathri" name="stud11">Gayathri</option>
+                <option value="jeyalakshmi" name="stud12">Jeya Lakshmi</option>
+                <option value="sowmiya" name="stud13">Sowmiya</option>
+                <option value="ganesh" name="stud14">Ganesh</option>
+                <option value="aadhav" name="stud15">Aadhav</option>
+                <option value="parvatha" name="stud16">Parvatha</option>
+                <option value="shivaram" name="stud17">Shivaram</option>
+                <option value="swetha" name="stud18">Swetha</option>
+                <option value="sargunam" name="stud19">Sargunam</option>
+                <option value="srinivasan" name="stud20">Srinivasan</option>
+            </select>
+        </div>
+        <button>Submit</button>
+        <br>
+        <button><a href="login.html">Add New Detail</a></button>
+        <div id="result"></div>
+    </div></form>
+</body>
+</html>
+

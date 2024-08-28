@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Student Details</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container{
+    width:500px;
+    height:300px;
+    padding: 30px;
+    background-image: linear-gradient(to right , white,lightpink,white);
+    border: 2px solid pink;
+    border-radius:10px;
+}
+.mail{
+    margin-top:50px;
+    margin-right:20px;
+    position:fixed;
+    justify-content: space-between;
+}
+.id{
+    margin-top:40px;
+    margin-left:115px;
+    margin-right:0px;
+    width:300px;
+    height:30px;
+}
+.pass{
+    margin-right:50px;
+    margin-left:5px;
+}
+.word{
+    margin-right:3px;
+    margin-left:1px;
+    width:300px;
+    height:30px;
+}
+.sub{
+    width:100px;
+    height:30px;
+    background-color:deeppink;
+    outline: none;
+    border-color: pink;
+    border-radius: 8px;
+}
+.sub:hover{
+    background-color:white;
+}
+        </style>
+    </head>
+    <body>
+        <h1 style="color:deeppink; text-align: center;">Student Mark Checking</h1>
+        <form method="post" action="markcal1.jsp">
+            <center>
+            <div class="container">
+                <label class="mail">Name</label>
+                <input name="username" class="id" type="text" placeholder="Enter your Name" required>
+                <br>
+                <br>
+                <br>
+                <label class="pass">Reg No.</label>
+                <input name="register no" class="word" type="number" placeholder="Enter your Register No" required>
+                <br>
+                <br>
+                <button class="sub">Submit</button>
+            </div>
+                </center>
+        </form>
+        
+    </body>
+</html>

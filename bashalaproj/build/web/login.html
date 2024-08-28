@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>New Record Adding Page</title>
+        <style>
+         .container{
+    width:500px;
+    height:400px;
+    padding: 30px;
+    margin-top: 50px;
+    background-image: linear-gradient(to right , white,lightpink,white);
+    border: 2px solid pink;
+    border-radius:10px;
+}
+.mail{
+    margin-top:50px;
+    margin-right:20px;
+    position:fixed;
+    justify-content: space-between;
+}
+.id{
+    margin-top:40px;
+    margin-left:115px;
+    margin-right:0px;
+    width:300px;
+    height:30px;
+}
+.pass{
+    margin-right:50px;
+    margin-left:5px;
+}
+.word{
+    margin-right:3px;
+    margin-left:1px;
+    width:300px;
+    height:30px;
+}
+.sub{
+    width:100px;
+    height:30px;
+    background-color:deeppink;
+    outline: none;
+    border-color: pink;
+    border-radius: 8px;
+}
+.sub:hover{
+    background-color:white;
+}
+        </style>
+    </head>
+    <body>
+        <center>
+            <div class="container">
+                <form method="post" action="new.jsp">
+                    <label class="mail">Name</label>
+                    <input name="username" class="id" type="text" placeholder="Enter your Name" required>
+                    <br><br>
+                    <label class="pass">Reg No.</label>
+                    <input name="register_no" class="word" type="number" placeholder="Enter your Register No" required>
+                    <br><br>
+                    <label class="pass">Quiz Mark</label>
+                    <input name="quizmark" class="word" type="number" required>
+                    <br><br>
+                    <label class="pass">Attendance Mark</label>
+                    <input name="attendancemark" class="word" type="number" required>
+                    <br><br> 
+                    <label class="pass">Laboratory Mark</label>
+                    <input name="labmark" class="word" type="number" required>
+                    <br><br> 
+                    <label class="pass">Total Internal Mark</label>
+                    <input name="allmark" class="word" type="number" required>
+                    <br><br>
+                    <button class="sub" type="submit">Submit</button>
+                </form>
+                </div>
+        </center>
+    </body>
+</html>
+
